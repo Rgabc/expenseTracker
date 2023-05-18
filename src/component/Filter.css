@@ -1,0 +1,49 @@
+*{margin:0;
+padding: 0;}
+
+.FilterButton{
+ transform: translate(40rem,1rem);
+height:2rem;
+width:6rem;
+text-align: center;
+border-radius:6px;
+font-weight: bold;
+border:solid 2px rgba(255, 255, 255, 0.863);
+background-color:rgb(245, 245, 250);
+border-radius:11px;
+}
+.FilterButton option{font-size: .7rem;
+font-weight: 400;}
+.FilterButton:hover{box-shadow: 4px 4px 8px rgb(228, 223, 223);
+cursor: pointer; }
+
+
+.infoFilter h5{ 
+    transform: translate(2rem,2.5rem);
+    color:white;
+    font-size: 1.5rem;
+   }
+@media(max-width:550px){
+    .FilterButton{
+       height:2.5rem;
+       width:6rem;}
+       .FilterButton option{font-size: .9rem;
+    font-weight: 600;}
+    .infoFilter h5{ 
+        transform: translate(2rem,2.8rem);
+       }
+}
+
+@media(max-width:450px){
+    .FilterButton{
+       height:2.9rem;
+       width:6.3rem;}
+       .FilterButton option{font-size: 1rem;
+    font-weight: 600;}
+     .infoFilter h5{ 
+           transform: translate(2rem,3rem);
+        font-size: 1.7rem;
+       } 
+} 
+
+

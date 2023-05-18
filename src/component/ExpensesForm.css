@@ -1,0 +1,154 @@
+*{margin:0;
+padding: 0;}
+.visible{display:block;
+}
+.invisible{display:none; }
+
+.formstart{margin:6rem auto;
+height:4rem;
+width:48rem;
+background-color: rgba(102, 123, 192, 0.74);
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateY(-5rem);
+border-radius:7px;
+
+}
+.formstart h4{font-size: 1rem;}
+.formstart button{position: absolute;
+ background-color: blueviolet;
+ color: white;
+    height:2.5rem;
+    width:10rem;
+    border-radius: 7px;
+}
+.formstart button:hover{box-shadow: 2px 2px 2px black;
+cursor: pointer;}
+.main{
+    height:15rem;
+    background-color:none;
+    overflow: hidden;}
+.form form{margin:7px auto;
+    height:14rem;
+    width:48rem;
+position: relative;
+    background-color: rgba(102, 123, 192, 0.74)   }
+    .Title{position:absolute;
+    margin-top:1rem;
+      margin-left:1rem;
+      }
+      .design{font-weight: 600;
+        font-size: larger; 
+
+margin-left: 1rem;
+}
+   
+    .Title input{position: absolute;  
+        height:1.8rem;
+    width:18rem;
+    border-radius:7px;
+
+   } 
+.amount{position: relative;
+           transform: translate(19rem,1rem); }
+           .amount input{position: absolute;
+            /* transform: translateX(-5rem); */
+            height:1.8rem;
+            width:18rem;
+            border-radius:7px;} 
+           .date{position: absolute;
+        transform: translate(0rem,3rem);}
+        .date input{position: absolute;
+            font-weight: 300;
+            height:1.8rem;
+            width:18rem;
+            border-radius:7px;
+        } 
+       
+        .formsubmit button{position: absolute;
+            background-color: blueviolet;
+            color: white;
+               height:3.5rem;
+               width:10rem;
+               border-radius: 7px;
+              bottom: 1rem;
+              right: 2rem;
+           
+             
+           /* transform: translate(40rem,-1rem); */
+           }
+           .formsubmit button:hover{box-shadow: 2px 2px 2px black;
+        cursor: pointer;}
+        @media(max-width:769px){
+                  .design{font-weight: 600;
+                    font-size:2rem;  } 
+                .Title input{ 
+                    height:2.5rem;
+                width:18rem; } 
+                
+                    .amount input{height:2.5rem;
+                        width:18rem;} 
+                    
+                 .date input{height:2.5rem;
+                    width:18rem;}
+                     
+                
+                 .formsubmit button{
+                        height:4rem;
+                       
+                       bottom: 1rem;
+                       right: 3rem;
+                    
+                    }
+                }
+                @media(max-width:700px){
+                    .formstart{
+                        height:5rem;
+                        width:48rem;
+                    
+                        
+                        }
+                        .formstart button{
+                            height:3.5rem;
+                            width:10rem;
+                            
+                        }
+                }
+                @media(max-width:560px){
+                    .formstart{
+                        height:6rem;
+                        width:48rem;
+                    
+                        
+                        }
+                        
+                        .formstart button{
+                            height:4.5rem;
+                            width:12rem;
+                            
+                        }
+                    
+                    .formstart h4{font-size: 1.2rem;}
+                }
+                @media(max-width:420px){
+                    .formstart{
+                        height:6.5rem;
+                        width:48rem;
+                    
+                        
+                        }
+                        
+                        .formstart button{
+                            height:4.7rem;
+                            width:12rem;
+                            
+                        }
+                    
+                    .formstart h4{font-size: 1.3rem;}
+                }
+
+
+
+        

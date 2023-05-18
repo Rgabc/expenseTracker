@@ -1,0 +1,79 @@
+*{padding:0;
+margin: 0;}
+.middlebox{ position: relative;
+    height:auto; width:48rem;
+    transform: translate(4.9rem,0rem);
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius:7px;}
+.bgcolor{ height:5rem;
+    width:47rem;
+transform: translate(0rem,-1rem);
+    background-color: rgb(85, 85, 85);
+position: relative;
+display:grid;
+align-items: center;
+border-radius: 7px;
+margin:-2rem auto}
+/* .smallDisplay{height:4rem; width:4rem;
+    position: absolute; 
+    margin:0.5rem;
+    background-color: rgba(12, 11, 11, 0.815);
+    text-align: center;
+    border:solid 2px rgba(255, 255, 255, 0.863);
+border-radius: 6px; } */
+/* .h2{color: white;
+font-size:1rem;}
+h3{font-size:1.2rem ;
+    color:whitesmoke}
+.h2one{font-size:1.5rem;
+color:white;
+font-weight:bolder;} */
+.title{ font-size: 1rem;
+     color: white;
+    transform:translateX(6rem);
+}
+.buttonPrice{ position:absolute;
+    right:4rem;
+    height:2rem;
+width:6rem;
+border-radius:6px;
+color: white;
+font-weight: bold;
+border:solid 2px rgba(255, 255, 255, 0.863);
+background-color:rgb(51, 51, 238);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* .show{display: block;}
+.dont{display: none;} */
+
+@media(max-width:460px){
+    .buttonPrice{ position:absolute;
+        right:2rem;
+        height:2rem;
+    width:6rem;
+    
+    }
+}
+@media(max-width:422px){
+    .buttonPrice{ position:absolute;
+        right:1rem;
+        height:2rem;
+    width:6rem;
+    
+    }
+}
+/* @media(max-width:406px){
+    .button{ position:absolute;
+        right:0;
+        height:2rem;
+    width:6rem;
+    
+    }
+    .title{ font-size: 0.8rem;
+        color: white;
+        transform:translateX(5rem);
+    }
+   
+} */

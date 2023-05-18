@@ -1,0 +1,9 @@
+*{margin: 0;
+padding: 0;}
+.chartBackground{ 
+     background-color: #c6c4cc;
+    height:10rem;
+    width:47rem;
+    transform: translate(0.5rem,2rem);
+    border-radius:7px;
+}

@@ -1,0 +1,14 @@
+*{margin:0;
+padding: 0;}
+
+.box{background-color: gray ;
+    height:auto;
+width:58rem;
+
+margin-left:0.5rem;}
+/* @media(max-width:931px){
+    .box{width:50rem;}
+}
+@media(max-width:831px){
+    .box{width:40rem;}
+} */
