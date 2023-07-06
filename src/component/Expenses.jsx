@@ -12,9 +12,11 @@ const Expenses=(props)=>{
     const[FilterYear,setFilterYear]=useState()
     console.log(FilterYear);
 useEffect(()=>{
-axios.get("http://localhost:4020/expenses/")
+axios.get("http://localhost:4020/expenses")
 .then(async(res)=>{
    const userData= await res.data;
+   
+   console.log(userData);
    setData(userData)
 })
 .catch((err)=>{
@@ -34,6 +36,7 @@ const filterdata=(filtervalue)=>{
 // // we store this filter fnc in variable and replace the old map variable with this new variable name map filter combo attack
 //   // but old record should be bydefault but now its blank because no data in particular year
 let filterRecord = data.filter((row)=>{
+    console.log(row);
     const newDate=new Date(row.date)
     console.log(newDate.getFullYear())
     // switch(FilterYear){
@@ -56,7 +59,7 @@ let filterRecord = data.filter((row)=>{
     //    }
        
         else{
-            return( newDate.getFullYear()==FilterYear
+            return(  newDate.getFullYear()==FilterYear
         )
         }
        
@@ -72,10 +75,13 @@ let filterRecord = data.filter((row)=>{
       
     {/* this is map method i forgot return() so no html get showned**||**so use return() it will return html map 
     give dynamic data */}
-    {
+
+    {filterRecord.length>0?
+    
+   
 
         //arrayName.map(()=>{})
-        filterRecord.reverse().map((row)=>{ 
+       ( filterRecord.reverse().map((row)=>{ 
         console.log(row);
         
         return( <>
@@ -92,7 +98,7 @@ let filterRecord = data.filter((row)=>{
 </div>
 <div class="buttonPrice" type="submit">&#8377; {row.price}</div>
 </div></>);})
-}</div>
+) :console.log("no data")}</div>
 </>
     );
 
