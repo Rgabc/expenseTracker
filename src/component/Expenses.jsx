@@ -16,7 +16,6 @@ axios.get("http://localhost:4020/expenses/")
 .then(async(res)=>{
    const userData= await res.data;
    setData(userData)
-   console.log(userData)
 })
 .catch((err)=>{
     console.log(err)
